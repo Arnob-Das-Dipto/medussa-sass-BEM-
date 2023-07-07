@@ -1,0 +1,65 @@
+
+
+//    Template Name: MEDUSSA 
+//    Author Name: Arnob Das Dipto
+//    Description: Portfolio WebPage SASS (BEM) Project
+
+//    Index 
+
+//    ----
+//    01. Flex CSS
+//    02. Flex-Direction CSS
+//    03. Flex-Wrap CSS
+//    04. Flex Justify-Content CSS
+//    05. Flex Align-Items CSS
+
+
+// 01. Flex CSS
+
+$flexs: flex, inline-flex;
+
+@each $flex in $flexs {
+    .d-#{$flex} {
+        display: $flex;
+    }
+}
+
+// 02. Flex-Direction CSS
+
+$directions: row, row-reverse, column, column-reverse;
+
+@each $direction in $directions {
+    .flex-#{$direction} {
+        flex-direction: $direction;
+    }
+}
+
+// 03. Flex-Wrap CSS
+
+$wraps: wrap, nowrap, wrap-reverse;
+
+@each $wrap in $wraps {
+    .flex-#{$wrap} {
+        flex-wrap: $wrap;
+    }
+}
+
+// 04. Flex Justify-Content CSS
+
+$justifys: flex-start, center, flex-end, space-between, space-around, space-evenly;
+
+@each $justify in $justifys {
+    .justify-#{$justify} {
+        justify-content: $justify;
+    }
+}
+
+// 05. Flex Align-Items CSS
+
+$aligns: flex-start, center, flex-end, stretch, baseline ;
+
+@each $align in $aligns {
+    .align-#{$align} {
+        align-items: $align;
+    }
+} 

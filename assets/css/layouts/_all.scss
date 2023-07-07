@@ -1,0 +1,35 @@
+
+
+//    Template Name: MEDUSSA 
+//    Author Name: Arnob Das Dipto
+//    Description: Portfolio WebPage SASS (BEM) Project
+
+//    Index 
+
+//    ----
+//    01. Section Title CSS
+//    02. Header CSS
+//    03. Banner CSS
+//    04. About CSS
+//    05. Services CSS
+//    06. Gallery CSS
+//    07. Contact CSS
+//    08. Footer CSS
+
+
+// 01. Section Title CSS 
+@import 'section-title'; 
+// 02. Header CSS
+@import 'header';
+// 03. Banner CSS
+@import 'banner';
+// 04. About CSS
+@import 'about';
+// 05. Services CSS
+@import 'services';
+// 06. Gallery CSS
+@import 'gallery';
+// 07. Contact CSS
+@import 'contact';
+// 08. Footer CSS
+@import 'footer';

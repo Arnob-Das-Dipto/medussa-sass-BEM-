@@ -1,0 +1,25 @@
+
+
+//    Template Name: MEDUSSA 
+//    Author Name: Arnob Das Dipto
+//    Description: Portfolio WebPage SASS (BEM) Project
+
+
+.section-title{
+    h4{
+        font-size: 40px;
+        @include small {
+            font-size: 32px;
+        }
+    }
+    p{
+        max-width: 700px;
+        font-size: 18px;
+        line-height: 26px;
+        display: block;
+        margin: auto;
+        @include small {
+            font-size: 16px;
+        }
+    }
+}

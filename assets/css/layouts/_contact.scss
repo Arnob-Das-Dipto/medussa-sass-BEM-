@@ -1,0 +1,59 @@
+
+
+//    Template Name: MEDUSSA 
+//    Author Name: Arnob Das Dipto
+//    Description: Portfolio WebPage SASS (BEM) Project
+
+
+.contact{
+    background-color: $bg_gray;
+    &__items{}
+    &__form{
+        flex-basis: 700px;
+        @include large {
+            flex-basis: 620px;
+        }
+        @include medium {
+            flex-basis: 100%;
+            margin-bottom: 20px;
+        }
+        @include small {
+            flex-basis: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    &__input{}
+    &__info{
+        flex-basis: 420px;
+        @include large {
+            flex-basis: 330px;
+        }
+        @include medium {
+            flex-basis: 100%;
+        }
+        @include small {
+            flex-basis: 100%;
+        }
+    }
+    &__signle{}
+    &__icon{
+        background-color: $primary_color;
+        color: $white;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+
+    }
+    &__title{}
+    &__title-info{
+        display: block;
+        font-size: 16px;
+    }
+    &__title-info-email{
+        display: block;
+        font-size: 16px;
+        text-transform: lowercase;
+    }
+}

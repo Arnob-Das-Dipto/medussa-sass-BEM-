@@ -1,0 +1,62 @@
+
+
+//    Template Name: MEDUSSA 
+//    Author Name: Arnob Das Dipto
+//    Description: Portfolio WebPage SASS (BEM) Project
+
+//    Index 
+
+//    ----
+//    01. Body CSS
+//    02. Text-Transform CSS 
+//    03. Text-Align CSS
+//    04. Sizes CSS
+
+
+// 01. Body CSS
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+// 02. Text-Transform CSS 
+
+$transforms: uppercase, lowercase, capitalize;
+
+@each $transform in $transforms {
+    .text-#{$transform} {
+        text-transform: $transform;
+    }
+}
+
+// 03. Text-Align CSS
+
+$aligns: left, center, right, justify;
+
+@each $align in $aligns {
+    .text-#{$align} {
+        text-align: $align;
+    }
+}
+
+// 04. Sizes CSS
+
+$sizes: (h1, 40px, 50px, 700),
+        (h2, 32px, 40px, 600),
+        (h3, 28px, 36px, 600),
+        (h4, 24px, 32px, 600),
+        (h5, 20px, 28px, 500),
+        (h6, 18px, 24px, 400);
+
+@each $font-name, $font-size, $line-height, $font-weight in $sizes {
+    #{$font-name} {
+        font-size: $font-size;
+        line-height: $line-height;
+        font-weight: $font-weight;
+    }
+}

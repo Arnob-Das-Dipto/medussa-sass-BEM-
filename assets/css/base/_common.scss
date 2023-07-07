@@ -1,0 +1,119 @@
+@import 'colors';
+
+
+//    Template Name: MEDUSSA 
+//    Author Name: Arnob Das Dipto
+//    Description: Portfolio WebPage SASS (BEM) Project
+
+//    Index 
+
+//    ----
+//    01. Reset CSS
+//    02. Form-Control CSS
+//    03. Mixin CSS
+//    04. Large CSS
+//    05. Medium CSS
+//    06. Small CSS
+
+
+// 01. Reset CSS
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: $link_color;
+    transition: .3s;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+ul {
+    list-style: none;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+// 02. Form-Control CSS
+
+.form-control {
+    width: 100%;
+    border: 1px solid $form_border;
+    padding: 10px;
+}
+
+// 03. Mixin CSS
+
+@mixin btn-border {
+    border: 2px solid $primary_color;
+    color: $primary_color;
+    display: inline-block;
+    padding: 8px 30px;
+    font-size: 20px;
+    &:hover {
+        background-color: $link_color;
+        color: $white;
+    }
+}
+
+@mixin btn-bg {
+    background-color: $btn_bg;
+    color: $white;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+    &:hover {
+        background-color: $btn_hover;
+    }
+}
+
+// 04. Large CSS
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@mixin large {
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        @content;
+    }
+}
+
+
+// 05. Medium CSS
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@mixin medium {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+
+// 06. Small CSS
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 350px;
+    }
+}
+
+@mixin small {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+} 

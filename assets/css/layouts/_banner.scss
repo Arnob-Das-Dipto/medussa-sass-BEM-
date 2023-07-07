@@ -1,0 +1,14 @@
+
+
+//    Template Name: MEDUSSA 
+//    Author Name: Arnob Das Dipto
+//    Description: Portfolio WebPage SASS (BEM) Project
+
+
+.banner{
+    &__box{}
+    &__image{
+        border: 3px dashed $border_color1;
+        padding: 3px;
+    }
+}
